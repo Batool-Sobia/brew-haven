@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="500" height="400">
+  <defs>
+    <radialGradient id="heroGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#EADBC8" stop-opacity="0.8"/>
+      <stop offset="70%" stop-color="#FFF8EE" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#FFF8EE" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cupGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4B2E24"/>
+      <stop offset="30%" stop-color="#6A4235"/>
+      <stop offset="70%" stop-color="#4B2E24"/>
+      <stop offset="100%" stop-color="#341E17"/>
+    </linearGradient>
+    <linearGradient id="foamGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8EE"/>
+      <stop offset="100%" stop-color="#EADBC8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background glow circle -->
+  <circle cx="250" cy="220" r="180" fill="url(#heroGlow)"/>
+
+  <!-- Decorative Coffee Beans -->
+  <g transform="translate(100, 290) rotate(-25)">
+    <ellipse cx="15" cy="10" rx="14" ry="10" fill="#4B2E24"/>
+    <path d="M7 10 Q15 6 23 10" stroke="#C58B55" stroke-width="2" fill="none"/>
+  </g>
+  <g transform="translate(370, 280) rotate(35)">
+    <ellipse cx="15" cy="10" rx="13" ry="9" fill="#4B2E24"/>
+    <path d="M7 10 Q15 6 23 10" stroke="#C58B55" stroke-width="2" fill="none"/>
+  </g>
+  <g transform="translate(390, 310) rotate(-15)">
+    <ellipse cx="12" cy="8" rx="11" ry="8" fill="#6A4235"/>
+    <path d="M5 8 Q12 5 19 8" stroke="#EADBC8" stroke-width="1.8" fill="none"/>
+  </g>
+
+  <!-- Large Saucer -->
+  <ellipse cx="250" cy="320" rx="160" ry="24" fill="#EADBC8"/>
+  <ellipse cx="250" cy="316" rx="140" ry="18" fill="#FFF8EE"/>
+  <ellipse cx="250" cy="314" rx="90" ry="10" fill="#EADBC8" opacity="0.6"/>
+
+  <!-- Shadow under cup -->
+  <ellipse cx="250" cy="305" rx="80" ry="10" fill="#C58B55" opacity="0.3"/>
+
+  <!-- Large Coffee Cup -->
+  <path d="M160 170 C160 270 200 305 250 305 C300 305 340 270 340 170 Z" fill="url(#cupGrad)"/>
+
+  <!-- Cup Rim -->
+  <ellipse cx="250" cy="170" rx="90" ry="22" fill="#EADBC8"/>
+  <ellipse cx="250" cy="170" rx="84" ry="18" fill="#341E17"/>
+
+  <!-- Coffee & Latte Art -->
+  <ellipse cx="250" cy="170" rx="78" ry="15" fill="url(#foamGrad)"/>
+  <!-- Latte Art Heart -->
+  <path d="M250 160 C242 152 232 156 232 165 C232 174 250 182 250 182 C250 182 268 174 268 165 C268 156 258 152 250 160 Z" fill="#C58B55" opacity="0.9"/>
+  <circle cx="250" cy="164" r="2.5" fill="#FFF8EE"/>
+
+  <!-- Cup Handle -->
+  <path d="M336 190 C380 190 380 260 330 270" fill="none" stroke="url(#cupGrad)" stroke-width="18" stroke-linecap="round"/>
+  <path d="M336 190 C374 190 374 260 330 270" fill="none" stroke="#C58B55" stroke-width="4" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Rising Aromatic Steam Waves -->
+  <path d="M220 130 Q210 95 230 70 Q240 50 230 30" fill="none" stroke="#C58B55" stroke-width="4" stroke-linecap="round" opacity="0.75"/>
+  <path d="M250 135 Q265 100 248 70 Q235 45 250 20" fill="none" stroke="#4B2E24" stroke-width="4.5" stroke-linecap="round" opacity="0.85"/>
+  <path d="M280 130 Q295 95 275 68 Q260 48 275 28" fill="none" stroke="#C58B55" stroke-width="4" stroke-linecap="round" opacity="0.75"/>
+
+  <!-- Sparkles -->
+  <g fill="#C58B55">
+    <path d="M140 100 L143 108 L151 111 L143 114 L140 122 L137 114 L129 111 L137 108 Z" opacity="0.8"/>
+    <path d="M360 90 L362 96 L368 98 L362 100 L360 106 L358 100 L352 98 L358 96 Z" opacity="0.7"/>
+    <circle cx="160" cy="70" r="3" opacity="0.5"/>
+    <circle cx="340" cy="60" r="2.5" opacity="0.6"/>
+  </g>
+</svg>

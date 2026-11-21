@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="macchiatoLayers" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8EE"/>
+      <stop offset="20%" stop-color="#FFF8EE"/>
+      <stop offset="45%" stop-color="#6A4235"/>
+      <stop offset="70%" stop-color="#EADBC8"/>
+      <stop offset="100%" stop-color="#FFF8EE"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="90" fill="#FFF8EE"/>
+  <!-- Base -->
+  <ellipse cx="100" cy="168" rx="36" ry="7" fill="#EADBC8"/>
+  <!-- Glass Cup -->
+  <path d="M70 55 L77 158 Q100 164 123 158 L130 55 Z" fill="url(#macchiatoLayers)"/>
+  <!-- Glass Rim -->
+  <ellipse cx="100" cy="55" rx="30" ry="8" fill="#EADBC8"/>
+  <ellipse cx="100" cy="55" rx="27" ry="6.5" fill="#FFF8EE"/>
+  <!-- Caramel Crosshatch Grid Drizzle -->
+  <path d="M82 53 Q100 58 118 53" fill="none" stroke="#C58B55" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M86 56 Q100 61 114 56" fill="none" stroke="#C58B55" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M92 49 L94 61" fill="none" stroke="#C58B55" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M100 48 L100 62" fill="none" stroke="#C58B55" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M108 49 L106 61" fill="none" stroke="#C58B55" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- Glass Handle -->
+  <path d="M128 80 C154 80 154 135 124 138" fill="none" stroke="#EADBC8" stroke-width="7" stroke-linecap="round"/>
+</svg>

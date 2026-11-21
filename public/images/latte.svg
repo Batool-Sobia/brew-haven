@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EADBC8" stop-opacity="0.6"/>
+      <stop offset="20%" stop-color="#FFF8EE" stop-opacity="0.3"/>
+      <stop offset="80%" stop-color="#EADBC8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#C58B55" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="latteLayers" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8EE"/>
+      <stop offset="25%" stop-color="#EADBC8"/>
+      <stop offset="55%" stop-color="#C58B55"/>
+      <stop offset="75%" stop-color="#6A4235"/>
+      <stop offset="100%" stop-color="#4B2E24"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="90" fill="#FFF8EE"/>
+  <!-- Glass Base -->
+  <ellipse cx="100" cy="168" rx="36" ry="7" fill="#EADBC8"/>
+  <rect x="94" y="158" width="12" height="10" fill="#EADBC8"/>
+  <!-- Tall Glass -->
+  <path d="M72 55 L78 158 Q100 163 122 158 L128 55 Z" fill="url(#latteLayers)"/>
+  <!-- Glass Shine Overlay -->
+  <path d="M72 55 L78 158 Q100 163 122 158 L128 55 Z" fill="url(#glassGrad)"/>
+  <!-- Glass Rim -->
+  <ellipse cx="100" cy="55" rx="28" ry="7" fill="#FFF8EE"/>
+  <ellipse cx="100" cy="55" rx="25" ry="5.5" fill="#EADBC8"/>
+  <!-- Milk Foam Top -->
+  <ellipse cx="100" cy="54" rx="22" ry="5" fill="#FFFFFF"/>
+  <!-- Rosette leaf art -->
+  <path d="M100 52 Q97 54 100 57 Q103 54 100 52" fill="#C58B55"/>
+  <!-- Subtle Steam -->
+  <path d="M96 42 Q92 28 97 18" fill="none" stroke="#C58B55" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <path d="M104 43 Q109 30 103 19" fill="none" stroke="#4B2E24" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+</svg>

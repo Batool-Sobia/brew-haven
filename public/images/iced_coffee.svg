@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="icedBrew" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#C58B55"/>
+      <stop offset="40%" stop-color="#6A4235"/>
+      <stop offset="100%" stop-color="#29211D"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="90" fill="#FFF8EE"/>
+  <!-- Glass Base -->
+  <ellipse cx="100" cy="170" rx="32" ry="7" fill="#EADBC8"/>
+  <!-- Glass Cup -->
+  <path d="M72 45 L78 165 Q100 170 122 165 L128 45 Z" fill="url(#icedBrew)"/>
+  <!-- Glass Rim -->
+  <ellipse cx="100" cy="45" rx="28" ry="7" fill="#EADBC8"/>
+  <ellipse cx="100" cy="45" rx="25" ry="5.5" fill="#FFF8EE"/>
+  <!-- Straw -->
+  <path d="M108 140 L135 15" stroke="#C58B55" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <path d="M108 140 L135 15" stroke="#FFF8EE" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <!-- Floating Ice Cubes -->
+  <rect x="84" y="60" width="18" height="18" rx="3" fill="#FFF8EE" opacity="0.8" transform="rotate(15 93 69)"/>
+  <rect x="98" y="78" width="18" height="18" rx="3" fill="#FFF8EE" opacity="0.8" transform="rotate(-20 107 87)"/>
+  <rect x="82" y="102" width="18" height="18" rx="3" fill="#FFF8EE" opacity="0.75" transform="rotate(10 91 111)"/>
+  <!-- Condensation droplets -->
+  <ellipse cx="75" cy="90" rx="1.5" ry="3" fill="#FFF8EE" opacity="0.8"/>
+  <ellipse cx="125" cy="115" rx="1.5" ry="3" fill="#FFF8EE" opacity="0.8"/>
+  <ellipse cx="76" cy="130" rx="1.5" ry="2.5" fill="#FFF8EE" opacity="0.8"/>
+</svg>

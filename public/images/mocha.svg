@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="mochaBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8EE"/>
+      <stop offset="25%" stop-color="#C58B55"/>
+      <stop offset="65%" stop-color="#4B2E24"/>
+      <stop offset="100%" stop-color="#29211D"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="90" fill="#FFF8EE"/>
+  <!-- Saucer -->
+  <ellipse cx="100" cy="162" rx="64" ry="12" fill="#EADBC8"/>
+  <ellipse cx="100" cy="160" rx="54" ry="9" fill="#FFF8EE"/>
+  <!-- Mug Body -->
+  <path d="M58 84 C58 145 74 153 100 153 C126 153 142 145 142 84 Z" fill="#4B2E24"/>
+  <!-- Handle -->
+  <path d="M140 95 C166 95 166 135 136 138" fill="none" stroke="#4B2E24" stroke-width="9" stroke-linecap="round"/>
+  <!-- Whipped Cream Dome -->
+  <path d="M68 84 Q100 50 132 84 Z" fill="#FFF8EE"/>
+  <path d="M80 75 Q100 55 120 75" fill="none" stroke="#EADBC8" stroke-width="3"/>
+  <circle cx="100" cy="56" r="6" fill="#FFF8EE"/>
+  <!-- Chocolate Drizzle -->
+  <path d="M85 70 Q95 62 105 76 Q115 65 125 78" fill="none" stroke="#29211D" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M92 78 Q102 70 112 82" fill="none" stroke="#C58B55" stroke-width="2" stroke-linecap="round"/>
+  <!-- Cocoa Sparkles -->
+  <circle cx="95" cy="62" r="1.5" fill="#29211D"/>
+  <circle cx="108" cy="60" r="1.5" fill="#29211D"/>
+  <circle cx="102" cy="68" r="1.2" fill="#29211D"/>
+</svg>

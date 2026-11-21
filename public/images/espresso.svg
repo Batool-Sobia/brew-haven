@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="espressoCrema" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C58B55"/>
+      <stop offset="60%" stop-color="#8C5338"/>
+      <stop offset="100%" stop-color="#341E17"/>
+    </radialGradient>
+  </defs>
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="90" fill="#FFF8EE"/>
+  <!-- Saucer -->
+  <ellipse cx="100" cy="155" rx="60" ry="12" fill="#EADBC8"/>
+  <ellipse cx="100" cy="153" rx="52" ry="9" fill="#FFF8EE"/>
+  <!-- Cup Body -->
+  <path d="M65 85 C65 140 80 148 100 148 C120 148 135 140 135 85 Z" fill="#4B2E24"/>
+  <!-- Cup Rim -->
+  <ellipse cx="100" cy="85" rx="35" ry="10" fill="#EADBC8"/>
+  <ellipse cx="100" cy="85" rx="32" ry="8" fill="#341E17"/>
+  <!-- Crema Surface -->
+  <ellipse cx="100" cy="86" rx="30" ry="7" fill="url(#espressoCrema)"/>
+  <ellipse cx="98" cy="86" rx="14" ry="3.5" fill="#C58B55" opacity="0.8"/>
+  <!-- Cup Handle -->
+  <path d="M133 95 C152 95 152 130 130 132" fill="none" stroke="#4B2E24" stroke-width="8" stroke-linecap="round"/>
+  <!-- Steam -->
+  <path d="M92 68 Q90 52 96 42" fill="none" stroke="#C58B55" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+  <path d="M102 70 Q107 55 102 40" fill="none" stroke="#4B2E24" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+</svg>

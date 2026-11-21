@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout — Brew Haven Sales Processing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-link">
+                <img src="images/logo.svg" alt="Brew Haven Logo" class="brand-logo">
+            </a>
+
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="menu.html" class="nav-link">Menu</a></li>
+                    <li><a href="cart.html" class="nav-link">Cart</a></li>
+                    <li><a href="checkout.html" class="nav-link active">Checkout</a></li>
+                    <li><a href="history.html" class="nav-link">Sales History</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="cart.html" class="cart-nav-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span>Cart</span>
+                    <span class="cart-badge" style="display: none;">0</span>
+                </a>
+                <button class="mobile-nav-toggle" aria-label="Toggle Navigation">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Checkout Main Content -->
+    <main class="section">
+        <div class="container">
+            <div class="section-header" style="text-align: left; margin-bottom: 30px;">
+                <div class="section-tag">Final Step</div>
+                <h1 class="section-title">Checkout &amp; Process Sale</h1>
+                <p>Verify customer details and apply optional discounts. All financial calculations will be authoritatively verified by the Java backend using BigDecimal.</p>
+            </div>
+
+            <div class="checkout-layout">
+                <!-- Customer Details Form -->
+                <div class="cart-card">
+                    <form id="checkout-form">
+                        <h3 style="margin-bottom: 20px; font-size: 1.3rem;">Guest &amp; Order Information</h3>
+
+                        <div class="form-group">
+                            <label class="form-label" for="customer-name">Customer Name (Optional)</label>
+                            <input type="text" id="customer-name" class="form-input" placeholder="e.g. Ahmed Khan or Walk-in Guest">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="order-type">Order Dining Type</label>
+                            <select id="order-type" class="form-select">
+                                <option value="Dine-in">Dine-in (At Café)</option>
+                                <option value="Takeaway">Takeaway (On the Go)</option>
+                                <option value="Drive-thru">Drive-thru Pick Up</option>
+                            </select>
+                        </div>
+
+                        <!-- Coupon / Promo Section -->
+                        <div class="form-group" style="margin-top: 28px;">
+                            <label class="form-label" for="coupon-code-input">Optional Discount / Promotion Code</label>
+                            <div class="coupon-row">
+                                <input type="text" id="coupon-code-input" class="form-input" placeholder="e.g. STUDENT15" maxlength="20">
+                                <button type="button" id="btn-apply-coupon" class="btn btn-outline" style="white-space: nowrap;">Apply</button>
+                            </div>
+                            <div id="coupon-message" style="margin-top: 6px; font-size: 0.85rem;"></div>
+
+                            <div class="coupon-hints">
+                                Available promos for testing:
+                                <span class="coupon-chip" onclick="usePromo('WELCOME10')">WELCOME10 (10% off)</span>
+                                <span class="coupon-chip" onclick="usePromo('STUDENT15')">STUDENT15 (15% off)</span>
+                                <span class="coupon-chip" onclick="usePromo('BREW20')">BREW20 (20% off)</span>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 32px; border-top: 1px solid var(--color-border); padding-top: 24px;">
+                            <button type="submit" id="btn-complete-sale" class="btn btn-primary btn-block" style="padding: 16px; font-size: 1.05rem;">
+                                <span>Complete Sale &amp; Print Receipt</span>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </button>
+                            <p style="font-size: 0.8rem; text-align: center; color: var(--color-muted-text); margin-top: 12px;">
+                                [✔] Clicking this sends the order to Java's HttpServer, verifies prices, and writes the sale to local file storage.
+                            </p>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Order Summary Side Card -->
+                <div class="summary-box">
+                    <h3 class="summary-title">Order Items Preview</h3>
+
+                    <div id="checkout-items-list" style="max-height: 280px; overflow-y: auto; margin-bottom: 20px; padding-right: 6px;">
+                        <!-- Items rendered by checkout.js -->
+                    </div>
+
+                    <div style="border-top: 1px solid var(--color-border); padding-top: 14px;">
+                        <div class="summary-line">
+                            <span>Subtotal:</span>
+                            <strong id="checkout-subtotal">Rs. 0</strong>
+                        </div>
+
+                        <div class="summary-line" id="checkout-discount-row" style="display: none; color: var(--color-success);">
+                            <span>Discount:</span>
+                            <strong id="checkout-discount-amt">- Rs. 0</strong>
+                        </div>
+
+                        <div class="summary-line total">
+                            <span>Final Bill:</span>
+                            <span class="summary-total-amt" id="checkout-grand-total">Rs. 0</span>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 20px; text-align: center;">
+                        <a href="cart.html" style="font-size: 0.88rem; color: var(--color-muted-text); text-decoration: underline;">
+                            ← Return to edit cart items
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>BREW HAVEN</h3>
+                <p>Your Daily Dose of Happiness. Premium artisan coffee, fresh bakery specialties, and university-grade sales management backend built in Java.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Artisan Menu</a></li>
+                    <li><a href="cart.html">View Cart</a></li>
+                    <li><a href="checkout.html">Checkout &amp; Pay</a></li>
+                    <li><a href="history.html">Sales History &amp; Summary</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>System Details</h4>
+                <ul class="footer-links">
+                    <li>Backend: Java HttpServer</li>
+                    <li>Storage: File-Based Records</li>
+                    <li>Calculations: BigDecimal</li>
+                    <li>Currency: Pakistani Rupees (PKR)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <div>&copy; 2026 Brew Haven Coffee Shop. All rights reserved.</div>
+            <div>University Assignment — Discrete Structures &amp; Java Programming</div>
+        </div>
+    </footer>
+
+    <!-- Core Scripts -->
+    <script src="js/app.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+</html>

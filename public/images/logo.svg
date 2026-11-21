@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C58B55"/>
+      <stop offset="100%" stop-color="#4B2E24"/>
+    </linearGradient>
+  </defs>
+  <!-- Cup Icon -->
+  <g transform="translate(10, 8)">
+    <circle cx="22" cy="22" r="21" fill="#EADBC8" opacity="0.4"/>
+    <!-- Saucer -->
+    <ellipse cx="22" cy="36" rx="16" ry="3.5" fill="#C58B55"/>
+    <!-- Cup Body -->
+    <path d="M11 16 Q11 32 22 32 Q33 32 33 16 Z" fill="url(#logoGrad)"/>
+    <!-- Handle -->
+    <path d="M32 18 C37 18 37 28 32 28" fill="none" stroke="#C58B55" stroke-width="3" stroke-linecap="round"/>
+    <!-- Steam -->
+    <path d="M18 12 Q19 7 17 4" fill="none" stroke="#C58B55" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+    <path d="M22 13 Q24 7 22 3" fill="none" stroke="#C58B55" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M26 12 Q27 7 25 4" fill="none" stroke="#C58B55" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  </g>
+  <!-- Text Brand -->
+  <text x="65" y="32" font-family="'Playfair Display', Georgia, serif" font-size="24" font-weight="800" fill="#4B2E24" letter-spacing="0.5">BREW HAVEN</text>
+  <text x="66" y="46" font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="600" fill="#C58B55" letter-spacing="2.5">ARTISAN CAFÉ &amp; BAKERY</text>
+</svg>

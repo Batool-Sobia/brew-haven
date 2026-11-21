@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew Haven — Your Daily Dose of Happiness | Artisan Café</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-link">
+                <img src="images/logo.svg" alt="Brew Haven Logo" class="brand-logo">
+            </a>
+
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="menu.html" class="nav-link">Menu</a></li>
+                    <li><a href="cart.html" class="nav-link">Cart</a></li>
+                    <li><a href="checkout.html" class="nav-link">Checkout</a></li>
+                    <li><a href="history.html" class="nav-link">Sales History</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="cart.html" class="cart-nav-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span>Cart</span>
+                    <span class="cart-badge" style="display: none;">0</span>
+                </a>
+                <button class="mobile-nav-toggle" aria-label="Toggle Navigation">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="hero-tag">
+                        <span>☕</span> Hand-Crafted Specialty Coffee &amp; Bakery
+                    </div>
+                    <h1 class="hero-title">
+                        Your Daily Dose of <span>Happiness.</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Step into Brew Haven, where carefully roasted Arabica beans meet rich steam and warm hospitality. From energizing morning espressos to velvety afternoon macchiatos, every cup is brewed with passion.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="menu.html" class="btn btn-primary">
+                            <span>Explore Our Menu</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="history.html" class="btn btn-outline">
+                            <span>View Sales Dashboard</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <img src="images/hero_coffee.svg" alt="Artisan Coffee at Brew Haven" class="hero-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Strip -->
+        <section class="features-strip">
+            <div class="container features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon-box">☕</div>
+                    <div class="feature-text">
+                        <h4>100% Arabica Beans</h4>
+                        <p>Ethically sourced from high-altitude coffee estates and roasted to perfection.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon-box">🥐</div>
+                    <div class="feature-text">
+                        <h4>Fresh Artisan Bakery</h4>
+                        <p>Delicious muffins and brownies baked fresh every morning in our in-house ovens.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon-box">🧾</div>
+                    <div class="feature-text">
+                        <h4>Instant Receipt Management</h4>
+                        <p>Fast sales calculation, coupon discounts, and persistent local transaction storage.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Drinks Preview -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">Café Specialties</div>
+                    <h2 class="section-title">Barista Favourites</h2>
+                    <p>Discover our guests' most cherished handcrafted beverages, expertly prepared with precision and love.</p>
+                </div>
+
+                <div class="products-grid">
+                    <!-- Featured Product 1 -->
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <span class="badge badge-caramel product-category-badge">Hot Coffees</span>
+                            <img src="images/cappuccino.svg" alt="Cappuccino" class="product-img">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Cappuccino</h3>
+                            <p class="product-desc">Harmonious blend of equal parts espresso, steamed milk, and velvety foam dusted with cocoa.</p>
+                            <div class="product-footer">
+                                <div class="product-price"><span>Rs.</span>400</div>
+                                <a href="menu.html" class="btn btn-sm btn-primary">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Featured Product 2 -->
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <span class="badge badge-caramel product-category-badge">Hot Coffees</span>
+                            <img src="images/caramel_macchiato.svg" alt="Caramel Macchiato" class="product-img">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Caramel Macchiato</h3>
+                            <p class="product-desc">Steamed vanilla-scented milk marked with bold espresso and drizzled with buttery caramel.</p>
+                            <div class="product-footer">
+                                <div class="product-price"><span>Rs.</span>480</div>
+                                <a href="menu.html" class="btn btn-sm btn-primary">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Featured Product 3 -->
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <span class="badge badge-caramel product-category-badge">Cold Brews &amp; Iced</span>
+                            <img src="images/iced_coffee.svg" alt="Iced Coffee" class="product-img">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Iced Coffee</h3>
+                            <p class="product-desc">Slow-steeped signature cold brew served over crystal ice cubes for a revitalizing lift.</p>
+                            <div class="product-footer">
+                                <div class="product-price"><span>Rs.</span>350</div>
+                                <a href="menu.html" class="btn btn-sm btn-primary">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Featured Product 4 -->
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <span class="badge badge-caramel product-category-badge">Bakery &amp; Treats</span>
+                            <img src="images/chocolate_brownie.svg" alt="Chocolate Brownie" class="product-img">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Chocolate Brownie</h3>
+                            <p class="product-desc">Fudge-textured artisan brownie baked with pure cocoa, melted chocolate chips, and walnuts.</p>
+                            <div class="product-footer">
+                                <div class="product-price"><span>Rs.</span>250</div>
+                                <a href="menu.html" class="btn btn-sm btn-primary">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 50px;">
+                    <a href="menu.html" class="btn btn-secondary">
+                        <span>View Full 10-Item Menu</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Café Story Strip -->
+        <section class="section" style="background-color: var(--color-white); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+            <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center;">
+                <div>
+                    <div class="section-tag">About Brew Haven</div>
+                    <h2 class="section-title">A Sanctuary for Coffee Lovers</h2>
+                    <p style="margin-bottom: 16px;">
+                        Founded on the belief that a great cup of coffee can transform your day, Brew Haven provides a cozy retreat from the bustling city. Our beans are carefully roasted to unlock deep caramel notes and velvety finishes.
+                    </p>
+                    <p style="margin-bottom: 24px;">
+                        Whether you are studying for college exams, catching up with friends, or grabbing a quick espresso on your morning commute, our café management system ensures smooth sales and instant receipts.
+                    </p>
+                    <div style="display: flex; gap: 24px;">
+                        <div>
+                            <div style="font-family: var(--font-serif); font-size: 2rem; font-weight: 700; color: var(--color-caramel);">10+</div>
+                            <div style="font-size: 0.85rem; color: var(--color-muted-text);">Specialty Items</div>
+                        </div>
+                        <div style="border-left: 1px solid var(--color-border); padding-left: 24px;">
+                            <div style="font-family: var(--font-serif); font-size: 2rem; font-weight: 700; color: var(--color-coffee-brown);">100%</div>
+                            <div style="font-size: 0.85rem; color: var(--color-muted-text);">Standard Java Engine</div>
+                        </div>
+                        <div style="border-left: 1px solid var(--color-border); padding-left: 24px;">
+                            <div style="font-family: var(--font-serif); font-size: 2rem; font-weight: 700; color: var(--color-caramel);">0 ms</div>
+                            <div style="font-size: 0.85rem; color: var(--color-muted-text);">File-based Persistence</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="background-color: var(--color-beige-subtle); padding: 36px; border-radius: var(--radius-lg); border: 1px solid var(--color-light-beige);">
+                    <h3 style="margin-bottom: 16px; font-size: 1.4rem;">Café Hours &amp; Location</h3>
+                    <ul style="list-style: none; margin-bottom: 20px;">
+                        <li style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px dashed var(--color-border);">
+                            <span>Monday – Friday:</span>
+                            <strong>7:30 AM – 11:00 PM</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px dashed var(--color-border);">
+                            <span>Saturday – Sunday:</span>
+                            <strong>8:30 AM – 12:00 Midnight</strong>
+                        </li>
+                    </ul>
+                    <p style="font-size: 0.9rem; margin-bottom: 8px;"><strong>Address:</strong> Sector F-7 Markaz, Islamabad, Pakistan</p>
+                    <p style="font-size: 0.9rem;"><strong>Phone:</strong> +92 (51) 844-BREW (2739)</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>BREW HAVEN</h3>
+                <p>Your Daily Dose of Happiness. Premium artisan coffee, fresh bakery specialties, and university-grade sales management backend built in Java.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Artisan Menu</a></li>
+                    <li><a href="cart.html">View Cart</a></li>
+                    <li><a href="checkout.html">Checkout &amp; Pay</a></li>
+                    <li><a href="history.html">Sales History &amp; Summary</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>System Details</h4>
+                <ul class="footer-links">
+                    <li>Backend: Java HttpServer</li>
+                    <li>Storage: File-Based Records</li>
+                    <li>Calculations: BigDecimal</li>
+                    <li>Currency: Pakistani Rupees (PKR)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <div>&copy; 2026 Brew Haven Coffee Shop. All rights reserved.</div>
+            <div>University Assignment — Discrete Structures &amp; Java Programming</div>
+        </div>
+    </footer>
+
+    <!-- Core Scripts -->
+    <script src="js/app.js"></script>
+</body>
+</html>

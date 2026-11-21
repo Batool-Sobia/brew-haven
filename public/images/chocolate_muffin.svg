@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="muffinTop" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#C58B55"/>
+      <stop offset="60%" stop-color="#8C5338"/>
+      <stop offset="100%" stop-color="#4B2E24"/>
+    </radialGradient>
+  </defs>
+  <circle cx="100" cy="100" r="90" fill="#FFF8EE"/>
+  <!-- Plate -->
+  <ellipse cx="100" cy="165" rx="72" ry="14" fill="#EADBC8"/>
+  <ellipse cx="100" cy="162" rx="60" ry="10" fill="#FFF8EE"/>
+  <!-- Muffin Paper Wrapper -->
+  <polygon points="68,115 132,115 122,156 78,156" fill="#EADBC8"/>
+  <line x1="84" y1="115" x2="87" y2="156" stroke="#C58B55" stroke-width="1.5"/>
+  <line x1="100" y1="115" x2="100" y2="156" stroke="#C58B55" stroke-width="1.5"/>
+  <line x1="116" y1="115" x2="113" y2="156" stroke="#C58B55" stroke-width="1.5"/>
+  <!-- Muffin Mushroom Top -->
+  <path d="M54 116 C48 85 70 65 100 65 C130 65 152 85 146 116 C140 126 60 126 54 116 Z" fill="url(#muffinTop)"/>
+  <!-- Chocolate Chips -->
+  <polygon points="76,92 84,88 88,96 80,98" fill="#29211D"/>
+  <polygon points="106,78 115,74 118,83 110,85" fill="#29211D"/>
+  <polygon points="124,96 132,92 135,100 127,103" fill="#29211D"/>
+  <polygon points="94,102 102,98 105,106 97,108" fill="#29211D"/>
+  <polygon points="85,76 92,72 95,80 88,82" fill="#29211D"/>
+</svg>
